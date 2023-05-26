@@ -1,33 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Data Visualizaion</title>
-    </head>
-    <body>
-        <script>
-            fetch(
-                
-            )
-                .then((data) => data.json())
-                .then((data) => {
-                    const body = document.querySelector("body");
-                    const orderPopluation = document.createElement("ol");
-                    for (const i of data) {
-                        const local = document.createElement("li");
-                        local.innerText = i.지역이름 + i.인구;
-                        orderPopluation.append(local);
-                    }
-                    body.append(orderPopluation);
-                })
-                .catch((error) => {
-                    alert("ERROR: Can not read the data.");
-                });
-        </script>
-    </body>
-</html> -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -92,3 +62,34 @@
         </script>
     </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Data Visualizaion</title>
+    </head>
+    <body>
+        <script>
+            fetch(
+                
+            )
+                .then((data) => data.json())
+                .then((data) => {
+                    const body = document.querySelector("body");
+                    const orderPopluation = document.createElement("ol");
+                    for (const i of data) {
+                        const local = document.createElement("li");
+                        local.innerText = i.지역이름 + i.인구;
+                        orderPopluation.append(local);
+                    }
+                    body.append(orderPopluation);
+                })
+                .catch((error) => {
+                    alert("ERROR: Can not read the data.");
+                });
+        </script>
+    </body>
+</html> -->
